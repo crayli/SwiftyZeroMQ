@@ -14,6 +14,7 @@
 		04F8F5761DC5E6680018A3D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F8F5741DC5E6680018A3D5 /* Main.storyboard */; };
 		04F8F5781DC5E6680018A3D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F8F5771DC5E6680018A3D5 /* Assets.xcassets */; };
 		04F8F57B1DC5E6680018A3D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F8F5791DC5E6680018A3D5 /* LaunchScreen.storyboard */; };
+		715707C72337BD3A00EFD6DD /* STSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715707C02337BD3A00EFD6DD /* STSwift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,7 @@
 		04F8F57A1DC5E6680018A3D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04F8F57C1DC5E6680018A3D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04F8F5941DC5E7CB0018A3D5 /* SwiftyZeroMQ.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyZeroMQ.xcodeproj; path = ../../SwiftyZeroMQ.xcodeproj; sourceTree = "<group>"; };
+		715707C02337BD3A00EFD6DD /* STSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STSwift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 		04F8F56F1DC5E6680018A3D5 /* Example-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				715707C02337BD3A00EFD6DD /* STSwift.swift */,
 				04F8F5701DC5E6680018A3D5 /* AppDelegate.swift */,
 				04F8F5721DC5E6680018A3D5 /* ViewController.swift */,
 				04F8F5741DC5E6680018A3D5 /* Main.storyboard */,
@@ -199,6 +202,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -289,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04F8F5731DC5E6680018A3D5 /* ViewController.swift in Sources */,
+				715707C72337BD3A00EFD6DD /* STSwift.swift in Sources */,
 				04F8F5711DC5E6680018A3D5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,7 +432,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.azawawi.Example-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -440,7 +445,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.azawawi.Example-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

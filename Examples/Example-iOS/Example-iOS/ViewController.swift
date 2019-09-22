@@ -21,6 +21,22 @@ class ViewController: UIViewController {
         versionTextView.text =
         "SwiftyZeroMQ version is \(frameworkVersion)\n" +
             "ZeroMQ library version is \(version)"
+        
+        do {
+            let zmq = try STSwift.init(id: "abc")
+            //Use notify to set a callback when data recieved. Only need to call once.
+            zmq.notify( { (id: String, data: Array<Data>) in
+                print("got message from \(id)!")
+                for msg in data {
+                    print(String(data: msg, encoding: String.Encoding.utf8) ?? "Non string msg!")
+                }
+            })
+            try zmq.send(dest: "123", msg: "hello from ios 1")
+            try zmq.send(dest: "123", msg: "hello from ios 2")
+            try zmq.send(dest: "123", msg: "hello from ios 3")
+        } catch let error {
+            print("Got error: \(error)")
+        }
     }
 
     override func didReceiveMemoryWarning() {
