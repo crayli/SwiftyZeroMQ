@@ -25,7 +25,7 @@ public class STSwift: NSObject {
     private let context : SwiftyZeroMQ.Context
     private let responder : SwiftyZeroMQ.Socket
 //    private var callback : (String, Array<Data>) -> Void = Void
-    init(id: String) throws {
+    @objc public init(id: String) throws {
         context = try SwiftyZeroMQ.Context()
         responder = try context.socket(.dealer)
         try responder.setStringSocketOption(ZMQ_IDENTITY, id)

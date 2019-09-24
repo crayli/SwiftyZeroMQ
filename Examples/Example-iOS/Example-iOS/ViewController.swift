@@ -22,6 +22,9 @@ class ViewController: UIViewController {
         "SwiftyZeroMQ version is \(frameworkVersion)\n" +
             "ZeroMQ library version is \(version)"
         
+        let zmqtest = ZmqTest()
+        zmqtest.test()
+        /*
         do {
             let zmq = try STSwift.init(id: "abc")
             //Use notify to set a callback when data recieved. Only need to call once.
@@ -37,6 +40,7 @@ class ViewController: UIViewController {
         } catch let error {
             print("Got error: \(error)")
         }
+ */
     }
 
     override func didReceiveMemoryWarning() {
